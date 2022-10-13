@@ -1,8 +1,52 @@
 .Wrap {}
 
+.sc {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.sc h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+}
+
+.sc p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+}
+
+.sc .inner.flx {
+    gap: 30px;
+}
+
+.sc .case {
+    margin: 0 0 30px 0;
+}
+
+.sc strong {
+    display: block;
+    margin: 0 0 30px 0;
+}
+
 .inner {
     width: 1200px;
     margin: 0 auto;
+}
+
+p {
+    line-height: 1.45;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #333;
+    background: #333;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
 }
 
 .inner.flx {
@@ -10,6 +54,240 @@
     /* justify-content: space-between; */
 }
 
+.top_banner {
+    background: #f9f9f9;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.top_banner .inner {
+    justify-content: space-between;
+}
+
+.header {
+    line-height: 80px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+h1 {
+    font-size: 0;
+}
+
 nav {
     margin: 0 0 0 auto;
+}
+
+nav>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.mopen {
+    display: none;
+}
+
+.main_visual {
+    position: relative;
+    height: 600px;
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}
+
+.main_visual .inner h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+
+}
+
+.main_visual .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.main_event {
+    background: #f9f9f9;
+}
+
+.main_event .case {
+    border: 1px solid #ccc;
+}
+
+.footer {
+    padding: 30px 0;
+}
+
+.footer address {
+    margin: 0 0 10px 0;
+}
+
+
+/* 
+
+resposive 765
+
+
+*/
+
+@media (max-width: 768px) {
+    .Wrap {}
+
+    .sc {
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .sc h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin: 0 0 20px 0;
+    }
+
+    .sc p {
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 0 50px 0;
+    }
+
+    .sc .inner.flx {}
+
+    .sc .case {
+        margin: 0 0 30px 0;
+    }
+
+    .sc strong {
+        display: block;
+        margin: 0 0 30px 0;
+    }
+
+    .inner {
+        width: auto;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    p {
+        line-height: 1.45;
+    }
+
+    .btn {
+        display: inline-block;
+        border: 1px solid #333;
+        background: #333;
+        padding: 5px 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .inner.flx {
+        display: flex;
+        flex-direction: column;
+
+        /* justify-content: space-between; */
+    }
+
+    .top_banner {
+        position: fixed;
+        top: 50%;
+        left: 20px;
+        right: 20px;
+        transform: translateY(-50%);
+        padding: 50px 0;
+        background: #f9f9f9;
+        line-height: 30px;
+        font-size: 14px;
+        z-index: 999;
+    }
+
+    .top_banner .inner {
+        justify-content: space-between;
+    }
+
+    .header {
+        line-height: 80px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .mopen {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        font-size: 0;
+        z-index: 999;
+    }
+
+    h1 {
+        font-size: 0;
+    }
+
+    nav {
+        margin: 0 0 0 auto;
+    }
+
+    nav>ul {
+        display: flex;
+        gap: 40px;
+    }
+
+    .main_visual {
+        position: relative;
+        height: 600px;
+        background: url(../img/mainvisual01.jpg) no-repeat left center/cover;
+    }
+
+    .main_visual .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-shadow: 0 0 2px #000;
+    }
+
+    .main_visual .inner h2 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0 0 20px 0;
+        text-transform: uppercase;
+
+    }
+
+    .main_visual .inner p {
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 0 20px 0;
+        text-transform: uppercase;
+    }
+
+    .main_event {
+        background: #f9f9f9;
+    }
+
+    .main_event .case {
+        border: 1px solid #ccc;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .footer address {
+        margin: 0 0 10px 0;
+    }
 }
