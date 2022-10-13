@@ -1,0 +1,15 @@
+.Wrap {}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner.flx {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+nav {
+    margin: 0 0 0 auto;
+}
